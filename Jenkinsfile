@@ -30,10 +30,8 @@ pipeline {
 						
 						println "initiating terraform apply......................."
 						sh '''
-							/usr/local/bin/terraform apply -input=false
+							/usr/local/bin/terraform apply -input=false -auto-approve
 						'''
-						
-						println "initiating terraform apply......................."
 					}
 				}
             } 
