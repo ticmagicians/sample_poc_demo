@@ -14,23 +14,27 @@ pipeline {
 				script {
 					//withAWS(region: 'ca-central-1', credentials: "sz3++lQ+Uk1YjRJvpx0KrucUyinh3skonTi6CCvX") {
 					withAWS(region: 'ca-central-1', credentials: "AWS_TerraformUserKey") {
-							println 'inside script....'
-							println "Workspace: ${WORKSPACE}" 
-							
-							
-							println "initiating terraform init......................."
-							sh '''
-								/usr/local/bin/terraform init -input=false
-							'''
-							
-							println "initiating terraform plan......................."
-							sh '''
-								/usr/local/bin/terraform plan -input=false
-							'''
-							
-							
-							println "initiating terraform apply......................."
-						}
+						println 'inside script....'
+						println "Workspace: ${WORKSPACE}" 
+						
+						
+						println "initiating terraform init......................."
+						sh '''
+							/usr/local/bin/terraform init -input=false
+						'''
+						
+						println "initiating terraform plan......................."
+						sh '''
+							/usr/local/bin/terraform plan -input=false
+						'''
+						
+						println "initiating terraform apply......................."
+						sh '''
+							/usr/local/bin/terraform apply -input=false
+						'''
+						
+						println "initiating terraform apply......................."
+					}
 				}
             } 
         }
