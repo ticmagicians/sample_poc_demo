@@ -2,7 +2,7 @@ provider "aws" {
 	shared_credentials_file = "/home/.aws/credentials"
 	region = "ca-central-1"
 	profile = "terraform"
-}
+} 
 
 resource "aws_instance" "ec2_tf_sample_saurabh" {
 	ami = "ami-08a9b721ecc5b0a53"
