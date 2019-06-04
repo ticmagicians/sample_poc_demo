@@ -14,7 +14,7 @@ resource "aws_eip" "eip_tf_sample_saurabh" {
 }
 
 resource "aws_s3_bucket" "s3_bucket_sample_saurabh" {
-	bucket = "sample-bucket-2-for-test"
+	bucket = "sample-bucket-1-for-test"
 	acl = "private"
 }
 
