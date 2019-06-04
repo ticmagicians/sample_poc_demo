@@ -1,5 +1,5 @@
 provider "aws" {
-	shared_credentials_file = "/home/.aws/"
+	shared_credentials_file = "/home/.aws/credentials"
 	region = "ca-central-1"
 
 } 
