@@ -12,7 +12,6 @@ pipeline {
             steps {
                 echo 'Building..'
 				script {
-					//withAWS(region: 'ca-central-1', credentials: "sz3++lQ+Uk1YjRJvpx0KrucUyinh3skonTi6CCvX") {
 					withAWS(region: 'ca-central-1', credentials: "AWS_TerraformUserKey") {
 						println 'inside script....'
 						println "Workspace: ${WORKSPACE}" 
@@ -28,10 +27,10 @@ pipeline {
 							/usr/local/bin/terraform plan -input=false
 						'''
 						
-						//println "initiating terraform apply......................."
-						//sh '''
-						//	/usr/local/bin/terraform apply -input=false -auto-approve
-						//'''
+						println "initiating terraform apply......................."
+						sh '''
+							/usr/local/bin/terraform apply -input=false -auto-approve
+						'''
 					}
 				}
             } 
