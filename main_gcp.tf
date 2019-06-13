@@ -1,5 +1,5 @@
 provider "google" {
-# credentials = "/home/ACN-Innov-PoC-11b405c1cf2f.json"
+ credentials = "/home/ACN-Innov-PoC-11b405c1cf2f.json"
  project     = "acn-innov-poc-243602"
  region      = "us-east1"
 }
