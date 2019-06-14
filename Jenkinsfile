@@ -24,7 +24,7 @@ pipeline {
 						
 						//println "initiating terraform plan......................."
 						//sh '''
-							/usr/local/bin/terraform plan -input=false
+						//	/usr/local/bin/terraform plan -input=false
 						//'''
 						
 						//println "initiating terraform apply......................."
