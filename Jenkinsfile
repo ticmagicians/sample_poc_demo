@@ -17,25 +17,25 @@ pipeline {
 						println "Workspace: ${WORKSPACE}" 
 						
 						
-						//println "initiating terraform init......................."
+						//println "initiating terraform INIT......................."
 						//sh '''
 						//	/usr/local/bin/terraform init -input=false
 						//'''
 						
-						//println "initiating terraform plan......................."
+						//println "initiating terraform PLAN......................."
 						//sh '''
 						//	/usr/local/bin/terraform plan -input=false
 						//'''
 						
-						//println "initiating terraform apply......................."
+						//println "initiating terraform APPLY......................."
 						//sh '''
 						//	/usr/local/bin/terraform apply -input=false -auto-approve
 						//'''
 						
-						println "initiating terraform destroy......................."
-						sh '''
-							/usr/local/bin/terraform destroy -input=false -auto-approve
-						'''
+						//println "initiating terraform DESTROY......................."
+						//sh '''
+						//	/usr/local/bin/terraform destroy -input=false -auto-approve
+						//'''
 						
 					}
 				}
