@@ -18,19 +18,19 @@ pipeline {
 						
 						
 						//println "initiating terraform INIT......................."
-						//sh '''
-						//	/usr/local/bin/terraform init -input=false
-						//'''
+						sh '''
+							/usr/local/bin/terraform init -input=false
+						'''
 						
 						//println "initiating terraform PLAN......................."
-						//sh '''
-						//	/usr/local/bin/terraform plan -input=false
-						//'''
+						sh '''
+							/usr/local/bin/terraform plan -input=false
+						'''
 						
 						//println "initiating terraform APPLY......................."
-						//sh '''
-						//	/usr/local/bin/terraform apply -input=false -auto-approve
-						//'''
+						sh '''
+							/usr/local/bin/terraform apply -input=false -auto-approve
+						'''
 						
 						//println "initiating terraform DESTROY......................."
 						//sh '''
